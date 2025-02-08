@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep & Study Schedule App</title>
+    <link rel="stylesheet" href="proj.css">
+</head>
+<body>
+    <div class="container">
+        <h1>STUDYSYNC</h1>
+       
+
+        <!-- Schedule Box -->
+        <div class="schedule-box">
+            <h2>Schedule Your Day</h2>
+            <div class="schedule-form">
+                <label for="sleep-time">Slept at(HH:MM):</label>
+                <input type="time" id="sleep-time" required>
+                
+                <label for="wake-time">Woke up at (HH:MM):</label>
+                <input type="time" id="wake-time" required>
+                
+                <label for="study-time">Number of hours devoted to studies(hours):</label>
+                <input type="number" id="study-time" min="0" required>
+                
+                <button onclick="checkSchedule()">Check Schedule</button>
+            </div>
+            <div id="result"></div>
+            <div id="health-status"></div> <!-- Health status will be shown here -->
+        </div>
+
+        <!-- Goal List -->
+        <div class="goal-list">
+            <h2>Today's goals</h2>
+            <ul id="goal-list">
+                <li>
+                    <input type="checkbox"> Study well
+                </li>
+                <li>
+                    <input type="checkbox"> Sleep well
+                </li>
+            </ul>
+            <input type="text" id="new-goal" placeholder="Add a new goal">
+            <button onclick="addGoal()">Add Goal</button>
+        </div>
+
+        <!-- Productivity Tracker -->
+        <div class="productivity-tracker">
+            <h2>How productive was I today?</h2>
+            <input type="number" id="productivity-level" min="0" max="10" placeholder="Rate your productivity (0-10)">
+            <button onclick="logProductivity()">Log Productivity</button>
+            <div id="productivity-records"></div>
+        </div>
+
+         <!-- Mood Tracker -->
+         <div class="mood-tracker">
+            <h2>My Mood Today</h2>
+            <input type="text" id="mood-input" placeholder="Enter your mood">
+            <button onclick="logMood()">My Mood Today</button>
+            <div id="mood-records"></div>
+        </div>
+
+        <!-- Motivation Quotes -->
+        <div class="motivational-quotes">
+            <h2>Motivation to get you going</h2>
+            <p id="quote">"The only difference between success and failure is the ability to take action." – Alexander Graham Bell</p>
+        </div>
+
+        <!-- Health Tips -->
+        <div id="health-tips">
+            <h2>REMEMBER!!!</h2>
+            <ul>
+                <li>Get 8-9 hours of sleep every day.</li>
+                <li>Stay hydrated to keep your body and mind active.</li>
+                <li>Take regular breaks while studying for better focus.</li>
+                <li>Maintain a balanced diet for optimal performance.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="proj.js"></script>
+</body>
+</html>
+
+

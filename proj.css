@@ -1,0 +1,194 @@
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f7e6; /* Light yellow background */
+    color: #000000; /* Dark text color for contrast */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #d3eecb; /* Light green background for container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Mood Tracker */
+.mood-tracker {
+    margin-bottom: 30px;
+}
+
+.mood-tracker input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #111010;
+    width: 50%;
+}
+
+.mood-tracker button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mood-tracker button:hover {
+    background-color: #0056b3;
+}
+
+/* Schedule Box */
+.schedule-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.schedule-box h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.schedule-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #151313;
+    width: 100%;
+}
+
+/* Goal List */
+#goal-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#goal-list li {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #0e0b0b;
+    display: flex;
+    align-items: center;
+}
+
+#goal-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.goal-list input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #120e0e;
+    width: 50%;
+}
+
+.goal-list button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.goal-list button:hover {
+    background-color: #007bff;
+}
+
+/* Productivity Tracker */
+.productivity-tracker {
+    margin-bottom: 30px;
+}
+
+.productivity-tracker input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #141111;
+    width: 60%;
+}
+
+.productivity-tracker button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.productivity-tracker button:hover {
+    background-color: #007bff;
+}
+
+/* Motivation Quotes */
+.motivational-quotes {
+    margin-bottom: 30px;
+}
+
+/* Health Tips */
+#health-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#health-tips li {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Health Status Section */
+#health-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add some spacing to elements to prevent overlapping */
+section {
+    margin-bottom: 20px;
+}
+
